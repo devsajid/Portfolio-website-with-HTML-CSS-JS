@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Portfolio Website</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" alt="logo" />
+          <ul>
+            <li><a href="#" class="nav-link nav-link-ltr"> Home</a></li>
+            <li><a href="#" class="nav-link nav-link-ltr"> About</a></li>
+            <li><a href="#" class="nav-link nav-link-ltr"> Services</a></li>
+            <li><a href="#" class="nav-link nav-link-ltr"> Portfolio</a></li>
+            <li><a href="#" class="nav-link nav-link-ltr"> Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer and Designer</p>
+          <h1>
+            Hi, I'm <span> Sajidur Rahman</span> <br />
+            from Bangladesh
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- About section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate ipsum pariatur saepe quas esse placeat. Totam sed modi
+              pariatur inventore autem eligendi saepe corporis temporibus natus
+              deserunt doloribus nisi, amet aspernatur hic omnis. Consectetur
+              perferendis impedit labore a incidunt nam fugiat quaerat. Nulla,
+              error harum? Beatae quidem animi non cupiditate.
+            </p>
+            <div class="tab-titles">
+              <p
+                class="tab-links tab-links-ltr active-link"
+                onclick="opentab('skills')"
+              >
+                Skills
+              </p>
+              <p
+                class="tab-links tab-links-ltr"
+                onclick="opentab('experience')"
+              >
+                Experience
+              </p>
+              <p class="tab-links tab-links-ltr" onclick="opentab('education')">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing web/App interfaces</li>
+                <li><span>Web Development</span><br />web app development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - Current</span><br />UI/UX Design Training at ET
+                  Institute
+                </li>
+                <li><span>2019-2021</span><br />Team lead at Start App LLC.</li>
+                <li>
+                  <span>2016-2017</span><br />Intership at ekart eCommerce
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2016</span><br />Designing web/App interfaces</li>
+                <li><span>2014</span><br />MBA from MIT Banglore</li>
+                <li><span>2012</span><br />BBA from ISM Banglore</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services section -->
+    <div id="services">
+      <div class="container">
+        <h2 class="sub-title">My Services</h2>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
+              libero culpa totam laboriosam voluptatem quam
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
+              libero culpa totam laboriosam voluptatem quam
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
+              libero culpa totam laboriosam voluptatem quam
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio section -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="mywork" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="mywork" />
+            <div class="layer">
+              <h3>Online Shoping App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="mywork" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact me</h2>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>sajidhasan164@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>01878922322</p>
+            <div class="socil-icons">
+              <a href="https://www.facebook.com/profile.php?id=100069360127548"
+                ><i class="fa-brands fa-facebook"></i></a
+              ><a href="https://www.linkedin.com/in/mdsohaghasan/"
+                ><i class="fa-brands fa-linkedin"></i> </a
+              ><a href="https://twitter.com/devsajidhasan"
+                ><i class="fa-brands fa-twitter"></i></a
+              ><a href="https://github.com/devsajid"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a></a>
+          </div>
+
+          <div class="contact-right">
+            <form>
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                required
+              /><input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              /><textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea
+              ><button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- javascript -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
