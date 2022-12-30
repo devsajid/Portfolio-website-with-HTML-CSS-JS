@@ -328,7 +328,7 @@ form .btn2 {
   animation: status 4s ease forwards;
 }
 #status.error {
-  background: #ff004f;
+  background: red;
   color: white;
   animation: status 4s ease forwards;
 }

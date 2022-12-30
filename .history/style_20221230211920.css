@@ -323,12 +323,12 @@ form .btn2 {
   margin: 0 auto;
   border-radius: 8px;
 }
-#status.success {
-  background: #ff004f;
+#status .success {
+  background: green;
   animation: status 4s ease forwards;
 }
-#status.error {
-  background: #ff004f;
+#status .error {
+  background: red;
   color: white;
   animation: status 4s ease forwards;
 }

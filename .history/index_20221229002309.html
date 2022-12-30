@@ -211,34 +211,25 @@
           </div>
 
           <div class="contact-right">
-            <form action="https://formspree.io/f/xvonopok"method="POST" id="my-form">
+            <form name="submit-to-google-sheet">
               <input
                 type="text"
-                name="name"
+                name="Name"
                 placeholder="Your Name"
                 required
               /><input
                 type="email"
-                name="email"
+                name="Email"
                 placeholder="Your Email"
                 required
-              /><p>Where are you from ?</p>
-              <select name="containent">
-              <option>Afrika</option>
-              <option>Antartika</option>
-              <option>Asia</option>
-              <option>Australia</option>
-              <option>Europe</option>
-              <option>South America</option>
-            </select>
-            <textarea
-                name="message"
+              /><textarea
+                name="Message"
                 rows="6"
                 placeholder="Your Message"
                 required
               ></textarea
               ><button type="submit" class="btn btn2">Submit</button>
-            </form><div id="status"></div>
+            </form>
           </div>
         </div>
       </div>
@@ -269,7 +260,14 @@
         sideicon.style.right="-200px"
       }
     </script>
-    <script type="text/javascript" src="index.js"> 
-     </script>
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest">
+    </script>
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbypgeFh8lKIxwPEqoweBSCe35NERIouepaySYixg6ahNrPikqmsPKS7RZdd8C6RYtpI1w/exec'
+      const form = document.forms['submit-to-google-sheet']
+    </script>
   </body>
 </html>

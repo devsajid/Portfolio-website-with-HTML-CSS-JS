@@ -324,11 +324,11 @@ form .btn2 {
   border-radius: 8px;
 }
 #status.success {
-  background: #ff004f;
+  background-color: #262626;
   animation: status 4s ease forwards;
 }
 #status.error {
-  background: #ff004f;
+  background-color: red;
   color: white;
   animation: status 4s ease forwards;
 }

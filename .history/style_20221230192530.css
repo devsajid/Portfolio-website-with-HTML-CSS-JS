@@ -293,12 +293,11 @@ nav ul li {
   display: inline-block;
   background: #ff004f;
 }
-.contact-right form {
+.contact-rught form {
   width: 100%;
 }
 form input,
-form textarea,
-select {
+form textarea {
   width: 100%;
   border: 0;
   outline: none;
@@ -314,37 +313,6 @@ form .btn2 {
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
-}
-#status {
-  width: 90%;
-  max-width: 500px;
-  text-align: center;
-  padding: 10px;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-#status.success {
-  background: #ff004f;
-  animation: status 4s ease forwards;
-}
-#status.error {
-  background: #ff004f;
-  color: white;
-  animation: status 4s ease forwards;
-}
-@keyframes status {
-  0% {
-    opacity: 1;
-    pointer-events: all;
-  }
-  90% {
-    opacity: 1;
-    pointer-events: all;
-  }
-  100% {
-    opacity: 0;
-    pointer-events: none;
-  }
 }
 .copyright {
   width: 100%;
