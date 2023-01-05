@@ -211,9 +211,8 @@
           </div>
 
           <div class="contact-right">
-            <form action="https://formspree.io/f/xvonopok"name="submit-to-google-sheet" method="POST" id="my-form">
-              <div class="form-group">
-                <label for="name">Enter your Full Name</label>
+            <form action="https://formspree.io/f/xvonopok"method="POST" id="my-form">
+              <div class="form-group"><label for="name">Enter your Full Name</label>
                 <input
                 type="text"
                 name="name"
@@ -221,18 +220,15 @@
                 id="name"
                 required
               /></div>
-              <div class="form-group">
-                <label for="name">Enter your email</label>
-                <input
+              <div class="form-group"><input
                 type="email"
                 name="email"
-                id="email"
-                placeholder="Enter your email"
+                placeholder="Your Email"
                 required
               /></div>
               <div class="form-group">
                 <p>Where are you from ?</p>
-                <select name="continent">
+                <select name="containent">
                 <option>Afrika</option>
                 <option>Antartika</option>
                 <option>Asia</option>
@@ -241,22 +237,19 @@
                 <option>South America</option>
               </select>
             </div>
-              <div class="form-group">
-                <label for="name">Enter your message</label>
-                <textarea
+              <div class="form-group"><textarea
                 name="message"
                 rows="6"
-                placeholder="Enter your message"
+                placeholder="Your Message"
                 required
               ></textarea>
             </div>
             <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <div id="status"></div>
+            </form><div id="status"></div>
           </div>
         </div>
       </div>
-      <div class="copyright"><p>copyright 2023 &#169 devsajidhasan. Made with<i class="fa-solid fa-heart"></i> by easy heart</p></div>
+      <div class="copyright"><p>copyright 2022 &#169 devsajidhasan. Made with<i class="fa-solid fa-heart"></i> by easy heart</p></div>
     </div>
     <!-- javascript -->
     <script>
@@ -282,16 +275,6 @@
       function closemenu(){
         sideicon.style.right="-200px"
       }
-    </script><script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxOe037-ffu576bcymeuRzcGL8DinwFtoaz2fERG9OlAuw3hZSEC05RdqdGkyKW8uDSPQ/exec'
-      const form = document.forms['submit-to-google-sheet']
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
     </script>
     <script type="text/javascript" src="index.js"> 
      </script>

@@ -288,7 +288,13 @@
     
       form.addEventListener('submit', e => {
         e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})  
+        var status = document.getElementById("status");
+        function success() {
+          form.reset();
+          status.classList.add("success");
+          status.innerHTML = "Thanks for your message";
+        }
           .then(response => console.log('Success!', response))
           .catch(error => console.error('Error!', error.message))
       })

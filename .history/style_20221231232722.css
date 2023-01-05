@@ -309,12 +309,10 @@ select {
   font-size: 18px;
   border-radius: 6px;
 }
-form input:focus,
-form textarea:focus,
-form select:focus {
-  border-color: #ff004f;
-  box-shadow: 0 0 0 0.25rem #ff004f;
-}
+forminput: , form textarea, select 
+
+
+
 form .btn2 {
   padding: 14px 60px;
   font-size: 18px;
